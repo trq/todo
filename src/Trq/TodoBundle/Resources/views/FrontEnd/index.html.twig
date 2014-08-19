@@ -8,9 +8,10 @@
         </div>
     </div>
 </div>
-<div class="row">
+{% verbatim %}
+<div class="row" ng-app="todo">
     <div class="large-12 columns">
-        <table>
+        <table ng-controller="TodoController as todoCtrl">
             <thead>
                 <tr>
                     <th>Title</th>
@@ -18,13 +19,13 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
+                <tr ng-repeat="item in todoCtrl.items">
+                    <td>{{ item.title }}</td>
+                    <td>{{ item.created_at  | date:'short' }}</td>
                 </tr>
             </tbody>
         </table>
     </div>
 </div>
-
+{% endverbatim %}
 {% endblock %}
