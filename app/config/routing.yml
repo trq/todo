@@ -1,0 +1,4 @@
+trq_todo:
+    resource: "@TrqTodoBundle/Resources/config/routing.yml"
+    prefix:   /
+

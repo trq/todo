@@ -1,0 +1,7 @@
+parameters:
+#    trq_todo.example.class: Trq\TodoBundle\Example
+
+services:
+#    trq_todo.example:
+#        class: %trq_todo.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

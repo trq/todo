@@ -1,0 +1,3 @@
+trq_todo_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: TrqTodoBundle:Default:index }
