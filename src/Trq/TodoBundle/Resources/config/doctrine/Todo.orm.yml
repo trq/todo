@@ -1,0 +1,23 @@
+Trq\TodoBundle\Entity\Todo:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+        description:
+            type: text
+        createdAt:
+            type: datetime
+            column: created_at
+        completedAt:
+            type: datetime
+            column: completed_at
+            nullable: true
+    lifecycleCallbacks: {  }
