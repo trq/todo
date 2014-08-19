@@ -4,6 +4,9 @@
 /app/cache/*
 /app/config/parameters.yml
 /app/logs/*
+/node_modules
+/web/bower_components
+/web/css/*
 !app/cache/.gitkeep
 !app/logs/.gitkeep
 /build/

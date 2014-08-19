@@ -1,3 +1,8 @@
 trq_todo_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: TrqTodoBundle:Default:index }
+    path:     /
+    defaults: { _controller: TrqTodoBundle:FrontEnd:index }
+
+trq_todo_api:
+    prefix: /api
+    type: rest
+    resource: Trq\TodoBundle\Controller\TodoController
